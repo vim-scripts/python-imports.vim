@@ -1,0 +1,17 @@
+This is a mirror of http://www.vim.org/scripts/script.php?script_id=4007
+
+This plugin automates the insertion of import statements at the top of a python script. It contains a function capable of adding import statements at the top of the file. This function is mapped to <C-f>. So you can for example type "sys.exit<C-f>" and the plugin will append "import sys" above the other import statements at the top of the file, unless sys already was imported. The script tries to maintain the import statements in order.
+
+If you define
+ let g:PythonAutoAddImports = 1
+in your vimrc, this script will additionally hook into the period key, such that for common modules,
+imports are added as you type: Typing
+ if len(sys.argv) == 0:
+into an empty file will leave you with
+ import sys
+ if len(sys.argv) == 0:
+then.
+
+This plugin is in its early stages. Also, it is my first vim plugin, so do not expect everything to run smoothly yet. I maintain this script in my vim repo at github:
+
+http://github.com/phillipberndt/vimconfig/blob/master/bundle/vim-python-imports/ftplugin/python.vim
