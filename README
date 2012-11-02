@@ -12,6 +12,6 @@ into an empty file will leave you with
  if len(sys.argv) == 0:
 then.
 
-This plugin is in its early stages. Also, it is my first vim plugin, so do not expect everything to run smoothly yet. I maintain this script in my vim repo at github:
+This plugin is in its early stages. Also, it is my first vim plugin, so do not expect everything to run smoothly yet. I maintain this script an vim repo at github:
 
-http://github.com/phillipberndt/vimconfig/blob/master/bundle/vim-python-imports/ftplugin/python.vim
+https://github.com/phillipberndt/python-imports.vim
